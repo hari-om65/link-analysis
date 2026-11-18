@@ -1,0 +1,266 @@
+{
+  "success": true,
+  "website": "https://razorpay.com/",
+  "brand": {
+    "name": "Razorpay",
+    "category": "Fintech and Financial Services",
+    "summary": "Razorpay is India's leading full-stack financial services platform providing a comprehensive suite for businesses to accept payments, automate banking, and manage payroll.",
+    "social_profiles": {
+      "LinkedIn": "https://www.linkedin.com/company/razorpay",
+      "X": "https://twitter.com/razorpay",
+      "Facebook": "https://www.facebook.com/razorpay",
+      "Instagram": "https://www.instagram.com/razorpay",
+      "YouTube": "https://www.youtube.com/@Razorpayindia"
+    },
+    "contact_emails": [],
+    "contact_phones": []
+  },
+  "analysis": {
+    "competitor_analysis": {
+      "your_brand": {
+        "name": "Razorpay",
+        "overview": "A full-stack finance platform offering payment gateways, business banking via RazorpayX, and automated payroll solutions. It is built with a developer-first approach and serves over 150,000 businesses.",
+        "category": "Financial Services Platform",
+        "main_products_services": [
+          "Payment Gateway",
+          "RazorpayX Business Banking",
+          "Razorpay POS"
+        ],
+        "target_market": "Startups, E-commerce, Enterprises, and Freelancers in India and Southeast Asia.",
+        "key_strengths": [
+          "Developer-friendly APIs",
+          "AI-native payment foundation model",
+          "Comprehensive ecosystem (Payments + Banking + Payroll)"
+        ]
+      },
+      "competitors": [
+        {
+          "name": "Cashfree Payments",
+          "website": "https://www.cashfree.com",
+          "main_service": "Payment Gateway and Payouts",
+          "target_market": "E-commerce and SaaS businesses in India",
+          "strengths": [
+            "Bulk disbursals",
+            "Verification services"
+          ],
+          "weaknesses": [
+            "Less integrated payroll ecosystem compared to RazorpayX"
+          ],
+          "confidence": "high",
+          "source": "ai_suggestion",
+          "website_verified": true
+        },
+        {
+          "name": "PayU India",
+          "website": "https://www.payu.in",
+          "main_service": "Payment Orchestration",
+          "target_market": "Large Enterprises and SMBs",
+          "strengths": [
+            "High success rates for enterprise",
+            "Global presence"
+          ],
+          "weaknesses": [
+            "UI/UX often perceived as less modern than Razorpay"
+          ],
+          "confidence": "high",
+          "source": "ai_suggestion",
+          "website_verified": true
+        }
+      ],
+      "comparison": [
+        {
+          "aspect": "Main Service",
+          "your_brand": "Full-stack Finance Platform",
+          "competitors": {
+            "Cashfree Payments": "Payment Gateway & Payouts"
+          }
+        },
+        {
+          "aspect": "Target Market",
+          "your_brand": "India-centric Startups to Enterprises",
+          "competitors": {}
+        },
+        {
+          "aspect": "Key Strength",
+          "your_brand": "AI-Native & Integrated Banking",
+          "competitors": {}
+        }
+      ],
+      "competitive_advantages": [
+        "Unified dashboard for payments, banking, and payroll.",
+        "Proprietary AI model for reducing RTO and increasing conversion."
+      ],
+      "opportunities": [
+        "Consolidate H1 tags to improve SEO ranking for 'Payment Gateway India'.",
+        "Optimize image alt text to capture more traffic from image searches."
+      ],
+      "research_note": "Competitors are AI-generated suggestions based on the website's category, services and market. They are not taken from a market-research database. 'website_verified' only confirms the suggested domain exists and responds; please review before making business decisions."
+    },
+    "target_search_queries": [
+      {
+        "query": "best payment gateway for startups india",
+        "platforms": [
+          "Google",
+          "LinkedIn"
+        ],
+        "intent": "Service Search",
+        "business_relevance": "Directly targets the core customer segment looking for a reliable payment solution.",
+        "target_audience": "Startup Founders and CTOs"
+      },
+      {
+        "query": "how to accept international payments in india",
+        "platforms": [
+          "Google"
+        ],
+        "intent": "B2B Search",
+        "business_relevance": "Captures businesses expanding globally who need Razorpay's MoneySaver Export Account.",
+        "target_audience": "SaaS Founders and Exporters"
+      }
+    ],
+    "seo_improvements": {
+      "primary_keyword": "Payment Gateway India",
+      "secondary_keywords": [
+        "Online Payments India",
+        "Business Banking",
+        "Automated Payroll"
+      ],
+      "long_tail_keywords": [
+        "best payment gateway for ecommerce india",
+        "accept international payments without website",
+        "automated tax payments for startups"
+      ],
+      "business_keywords": [
+        "Full-stack financial services",
+        "AI Native Payments",
+        "One-Click Checkout"
+      ],
+      "recommended_title": "Razorpay: #1 Payment Gateway & Business Banking in India",
+      "title_rationale": "The current title is good but adding '#1' and 'Business Banking' highlights the full-stack nature of the platform beyond just payments, fitting the 50-60 character limit.",
+      "meta_description": "Accept online payments instantly with Razorpay, India's best payment gateway. Manage business banking, automate payroll, and get credit. Trusted by 150k+ businesses.",
+      "supporting_content": [
+        {
+          "type": "Industry page",
+          "title": "Payment Solutions for Educational Institutions",
+          "purpose": "To target schools and colleges looking for fee collection and vendor payouts."
+        },
+        {
+          "type": "FAQ",
+          "title": "International Payment Settlement Timelines",
+          "purpose": "To address common concerns for SaaS and export businesses."
+        }
+      ],
+      "current_seo_audit": {
+        "current_title": "Razorpay - Best Payment Solution for Online Payments India",
+        "title_length": 58,
+        "current_meta_description": "Online Payments India: Start Accepting Payments Instantly with Razorpay's Payment Suite, which Supports Netbanking, Credit Card & Debit Cards, UPI etc.",
+        "meta_description_length": 151,
+        "h1_count": 18,
+        "h1_headings": [
+          "This festive season get",
+          "International Payments"
+        ],
+        "images_total": 244,
+        "images_missing_alt": 203,
+        "has_canonical": true,
+        "has_structured_data": true,
+        "has_open_graph": true,
+        "has_viewport_meta": true,
+        "has_robots_txt": true,
+        "sitemap_url": "https://razorpay.com/sitemap.xml",
+        "language": "en-IN",
+        "word_count": 1181,
+        "uses_https": true,
+        "rendered_with_javascript": false,
+        "response_time_ms": 409,
+        "html_size_kb": 2511.5,
+        "issues": [
+          "Homepage has 18 H1 headings; one clear H1 is recommended.",
+          "203 of 244 images have no alt text.",
+          "Homepage HTML is large (2511.5 KB)."
+        ]
+      }
+    },
+    "top_services": [
+      {
+        "service_name": "Payment Gateway",
+        "description": "Advanced gateway supporting 100+ payment modes including UPI, Cards, and Netbanking.",
+        "target_industry": "E-commerce, SaaS, Education",
+        "target_customer": "Online Merchants",
+        "main_benefit": "Industry-leading success rates and 5X quicker checkout.",
+        "source": "website"
+      },
+      {
+        "service_name": "RazorpayX Business Banking",
+        "description": "Fully-functional current accounts with automated payouts and vendor management.",
+        "target_industry": "Startups, BFSI",
+        "target_customer": "Finance Teams",
+        "main_benefit": "Automates banking operations and saves time on manual reconciliations.",
+        "source": "website"
+      }
+    ],
+    "target_audience": {
+      "primary_audience": [
+        "Startup Founders",
+        "E-commerce Merchants"
+      ],
+      "secondary_audience": [
+        "Freelancers",
+        "Chartered Accountants"
+      ],
+      "industry_segments": [
+        "E-Commerce",
+        "Education"
+      ],
+      "business_types": [
+        "D2C Brands",
+        "EdTech Platforms"
+      ],
+      "customer_profiles": [
+        "The Tech-Savvy Founder: Needs quick integration and scalable APIs.",
+        "The E-commerce Growth Manager: Focused on reducing RTO and increasing checkout conversion."
+      ],
+      "geographic_focus": "India, Singapore, United States, Malaysia",
+      "customer_needs": [
+        "Frictionless transaction processing",
+        "Automated tax and compliance filing"
+      ],
+      "customer_interests": [
+        "Fintech innovation",
+        "AI-native business tools"
+      ],
+      "recommended_segments": [
+        {
+          "audience": "D2C Brand Owners",
+          "business_type": "E-commerce",
+          "requirement": "Reduction in RTO (Return to Origin) and Magic Checkout."
+        },
+        {
+          "audience": "SaaS Exporters",
+          "business_type": "Software",
+          "requirement": "MoneySaver Export Account for low-cost international wire transfers."
+        }
+      ]
+    }
+  },
+  "meta": {
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3-flash-preview",
+    "used_fallback": false,
+    "pages_analyzed": [
+      "https://razorpay.com/",
+      "https://razorpay.com/about/",
+      "https://razorpay.com/pricing/",
+      "https://razorpay.com/solutions/e-commerce/"
+    ],
+    "input_tokens": 7982,
+    "output_tokens": 6100,
+    "estimated_cost_usd": 0.022291,
+    "llm_latency_ms": 36542,
+    "total_duration_ms": 39249,
+    "cached": false,
+    "generated_at": "2026-11-18T17:42:27.617725Z",
+    "notes": [
+      "Search volumes and rankings are intentionally not included - no search-volume data source is connected, so the queries are relevance-based suggestions only."
+    ]
+  }
+}

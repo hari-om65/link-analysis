@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Link Analysis</title>
+  <meta name="description" content="Competitor, search query, SEO, service and audience analysis for any website URL.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f6fed'/%3E%3Cpath d='M9 17l5 5 9-12' stroke='white' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="logo" href="/">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Link Analysis
+      </a>
+      <nav class="topnav">
+        <a href="#how-it-works" id="help-link">How to use</a>
+        <a href="/docs">API docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="top">
+      <h1>Analyse any business website</h1>
+      <p class="lead">Paste a company's website link and get a report on its competitors, what customers search for, how to rank better on Google, its main services and who its customers are.</p>
+
+      <form id="analyse-form" class="search-box" autocomplete="off">
+        <label for="url" class="field-label">Website link</label>
+        <div class="search">
+          <input id="url" name="url" type="text" inputmode="url" placeholder="e.g. razorpay.com" required>
+          <button id="submit" type="submit">Analyse website</button>
+        </div>
+        <p class="hint">You can type it with or without <code>https://</code>. Takes about 20&ndash;40 seconds.</p>
+      </form>
+      <div class="examples">
+        <span>Or try an example:</span>
+        <button type="button" class="chip" data-url="https://razorpay.com">razorpay.com</button>
+        <button type="button" class="chip" data-url="https://www.zoho.com/crm/">zoho.com/crm</button>
+        <button type="button" class="chip" data-url="https://basecamp.com">basecamp.com</button>
+      </div>
+    </section>
+
+    <!-- Shown before the first analysis -->
+    <section id="intro">
+      <div class="card" id="how-it-works">
+        <h2 class="section-title">How to use it</h2>
+        <ol class="how">
+          <li>
+            <span class="how-num">1</span>
+            <div><strong>Paste a website link</strong><p>Any company's homepage, e.g. <code>razorpay.com</code>, or click one of the examples above.</p></div>
+          </li>
+          <li>
+            <span class="how-num">2</span>
+            <div><strong>Click &ldquo;Analyse website&rdquo;</strong><p>The tool reads the homepage and up to 3 key pages (About, Services, Pricing), then writes the report. Keep this tab open.</p></div>
+          </li>
+          <li>
+            <span class="how-num">3</span>
+            <div><strong>Read the report</strong><p>Start with the summary at the top, then open the 5 numbered sections. You can download the result or save it as a PDF.</p></div>
+          </li>
+        </ol>
+      </div>
+
+      <h2 class="section-title">What you get</h2>
+      <div class="preview-grid">
+        <div class="preview"><span class="preview-num">1</span><strong>Competitors</strong><p>Who the business competes with, their strengths and weaknesses, and where it can win.</p></div>
+        <div class="preview"><span class="preview-num">2</span><strong>Search queries</strong><p>5 things customers would type on Google, Instagram, LinkedIn, Facebook or X to find it.</p></div>
+        <div class="preview"><span class="preview-num">3</span><strong>SEO</strong><p>How to rank higher on Google: better keywords, page title and description, plus a technical check-up.</p></div>
+        <div class="preview"><span class="preview-num">4</span><strong>Services</strong><p>The 5 most important things the business sells, and who each one is for.</p></div>
+        <div class="preview"><span class="preview-num">5</span><strong>Audience</strong><p>Who the customers are, what they need, and which groups to target in marketing.</p></div>
+      </div>
+    </section>
+
+    <section id="progress" class="card progress" hidden>
+      <div class="progress-head">
+        <strong>Analysing <span id="progress-url"></span></strong>
+        <span id="timer" class="muted">0s</span>
+      </div>
+      <ol class="steps">
+        <li data-step="0">Checking the link</li>
+        <li data-step="1">Reading the website and its key pages</li>
+        <li data-step="2">Writing the report (this is the longest step)</li>
+        <li data-step="3">Double-checking the competitors</li>
+      </ol>
+      <p class="muted small">Please wait on this page &mdash; it usually takes 20&ndash;40 seconds.</p>
+    </section>
+
+    <section id="error" class="card error" hidden role="alert">
+      <strong id="error-title">Something went wrong</strong>
+      <p id="error-message"></p>
+      <p id="error-help" class="error-help"></p>
+    </section>
+
+    <section id="results" hidden>
+      <div class="card brand">
+        <div class="brand-main">
+          <div class="brand-title">
+            <h2 id="brand-name"></h2>
+            <span id="brand-category" class="badge"></span>
+          </div>
+          <p id="brand-summary"></p>
+          <a id="brand-website" class="site-link" target="_blank" rel="noopener noreferrer"></a>
+          <div id="brand-social" class="social"></div>
+          <div id="brand-contacts" class="contacts muted small"></div>
+        </div>
+        <dl id="meta" class="meta"></dl>
+      </div>
+
+      <div class="card glance">
+        <h2 class="section-title">At a glance</h2>
+        <dl id="glance" class="glance-grid"></dl>
+      </div>
+
+      <p class="report-label">Full report &mdash; click a section to open it:</p>
+      <div class="toolbar">
+        <div class="tabs" role="tablist">
+          <button role="tab" class="tab active" data-tab="competitors"><span class="tab-num">1</span>Competitors</button>
+          <button role="tab" class="tab" data-tab="queries"><span class="tab-num">2</span>Search queries</button>
+          <button role="tab" class="tab" data-tab="seo"><span class="tab-num">3</span>SEO</button>
+          <button role="tab" class="tab" data-tab="services"><span class="tab-num">4</span>Services</button>
+          <button role="tab" class="tab" data-tab="audience"><span class="tab-num">5</span>Audience</button>
+          <button role="tab" class="tab" data-tab="json">Raw data</button>
+        </div>
+        <div class="actions">
+          <button type="button" id="download-json" class="ghost" title="Save the full result as a JSON file">Download</button>
+          <button type="button" id="print" class="ghost" title="Print the report or save it as a PDF">Save as PDF</button>
+        </div>
+      </div>
+
+      <div id="panel-competitors" class="panel"></div>
+      <div id="panel-queries" class="panel" hidden></div>
+      <div id="panel-seo" class="panel" hidden></div>
+      <div id="panel-services" class="panel" hidden></div>
+      <div id="panel-audience" class="panel" hidden></div>
+      <div id="panel-json" class="panel" hidden>
+        <p class="explain">The exact data returned by the API (<code>POST /link-analysis</code>), for developers.
+          <button type="button" id="copy-json" class="ghost small-btn">Copy</button></p>
+        <pre id="raw-json" class="code"></pre>
+      </div>
+
+      <details class="notes-box">
+        <summary>Notes about this analysis</summary>
+        <div id="notes"></div>
+      </details>
+
+      <div class="again">
+        <button type="button" id="again" class="ghost">&larr; Analyse another website</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>For developers: <code>POST /link-analysis</code> &middot; <a href="/docs">API documentation</a></span>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
