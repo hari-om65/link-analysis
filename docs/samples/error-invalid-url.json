@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/link-analysis",
+    "body": {
+      "url": "not a url"
+    }
+  },
+  "status_code": 422,
+  "response_time_seconds": 2.32,
+  "response": {
+    "success": false,
+    "error": {
+      "code": "invalid_url",
+      "message": "URL must not contain spaces."
+    }
+  }
+}

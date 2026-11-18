@@ -1,0 +1,23 @@
+# docker run --memory=512m -p 4001:4000 --env-file .env link-analysis  (same memory as the Render free plan)
+INFO:     Started server process [7]
+INFO:     Waiting for application startup.
+2026-11-18 18:06:07,661 | INFO    | app | LLM: gemini/gemini-3-flash-preview -> gemini/gemini-3.1-flash-lite
+2026-11-18 18:06:07,662 | INFO    | app | JavaScript rendering: enabled
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:4000 (Press CTRL+C to quit)
+INFO:     172.17.0.1:46794 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.17.0.1:46802 - "GET /health HTTP/1.1" 200 OK
+2026-11-18 18:06:10,103 | INFO    | httpx | HTTP Request: GET https://basecamp.com/ "HTTP/1.1 200 OK"
+2026-11-18 18:06:10,673 | INFO    | httpx | HTTP Request: GET https://basecamp.com/robots.txt "HTTP/1.1 200 OK"
+2026-11-18 18:06:10,732 | INFO    | httpx | HTTP Request: GET https://basecamp.com/about "HTTP/1.1 200 OK"
+2026-11-18 18:06:10,748 | INFO    | httpx | HTTP Request: GET https://basecamp.com/pricing "HTTP/1.1 200 OK"
+2026-11-18 18:06:10,784 | INFO    | httpx | HTTP Request: GET https://basecamp.com/projects/product-launch "HTTP/1.1 200 OK"
+2026-11-18 18:06:11,016 | INFO    | httpx | HTTP Request: GET https://basecamp.com/sitemap.xml "HTTP/1.1 200 OK"
+2026-11-18 18:06:11,026 | INFO    | app.services.website_extractor | Extracted https://basecamp.com/: 4 page(s), 20159 chars of text
+2026-11-18 18:06:25,983 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-11-18 18:06:26,541 | INFO    | httpx | HTTP Request: GET https://monday.com/ "HTTP/1.1 200 OK"
+2026-11-18 18:06:26,647 | INFO    | httpx | HTTP Request: GET https://asana.com/ "HTTP/1.1 200 OK"
+2026-11-18 18:06:26,934 | INFO    | httpx | HTTP Request: GET https://trello.com/ "HTTP/1.1 200 OK"
+2026-11-18 18:06:26,942 | INFO    | app.services.analysis_service | Analysed https://basecamp.com/ with gemini/gemini-3-flash-preview in 17797 ms (tokens in=4486 out=3052, cost=$0.011399)
+2026-11-18 18:06:26,961 | INFO    | app | [d252657e11aa] POST /link-analysis -> 200 in 17825 ms
+INFO:     172.17.0.1:46806 - "POST /link-analysis HTTP/1.1" 200 OK

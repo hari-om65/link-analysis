@@ -1,0 +1,409 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/link-analysis",
+    "body": {
+      "url": "https://www.zoho.com/crm/"
+    }
+  },
+  "status_code": 200,
+  "response_time_seconds": 28.91,
+  "response": {
+    "success": true,
+    "website": "https://www.zoho.com/en-in/crm/",
+    "brand": {
+      "name": "Zoho",
+      "category": "Sales CRM Software",
+      "summary": "Zoho CRM is an AI-powered customer relationship management platform designed to automate sales operations, enhance team collaboration, and provide a 360-degree view of business data.",
+      "social_profiles": {},
+      "contact_emails": [
+        "sales@zohocorp.com"
+      ],
+      "contact_phones": []
+    },
+    "analysis": {
+      "competitor_analysis": {
+        "your_brand": {
+          "name": "Zoho CRM",
+          "overview": "A flexible, AI-driven CRM platform trusted by over 350,000 businesses. It focuses on intelligent automation through Zia AI and offers extensive customization for diverse industries.",
+          "category": "CRM Software",
+          "main_products_services": [
+            "Zoho CRM",
+            "Zia AI Agents",
+            "CRM for Everyone",
+            "Jumpstart Implementation Services",
+            "Canvas Design Studio"
+          ],
+          "target_market": "Global businesses ranging from startups and small businesses to large enterprises across multiple verticals.",
+          "key_strengths": [
+            "AI-core with Zia Agents",
+            "Extensive integration ecosystem (1,000+ apps)",
+            "No-contract, pay-as-you-go flexibility",
+            "Strong focus on data privacy and security"
+          ]
+        },
+        "competitors": [
+          {
+            "name": "Salesforce",
+            "website": "https://www.salesforce.com",
+            "main_service": "Customer 360 CRM",
+            "target_market": "Mid-market and Enterprise",
+            "strengths": [
+              "Market leader",
+              "Deep enterprise capabilities",
+              "Extensive AppExchange"
+            ],
+            "weaknesses": [
+              "High total cost of ownership",
+              "Complex implementation",
+              "Rigid contract structures"
+            ],
+            "confidence": "high",
+            "source": "ai_suggestion",
+            "website_verified": true
+          },
+          {
+            "name": "HubSpot",
+            "website": "https://www.hubspot.com",
+            "main_service": "CRM Platform",
+            "target_market": "SMBs and Scaling Startups",
+            "strengths": [
+              "User-friendly interface",
+              "Strong inbound marketing integration",
+              "Free entry-level tier"
+            ],
+            "weaknesses": [
+              "Prices scale rapidly with features",
+              "Less customization for complex vertical industries"
+            ],
+            "confidence": "high",
+            "source": "ai_suggestion",
+            "website_verified": true
+          },
+          {
+            "name": "Pipedrive",
+            "website": "https://www.pipedrive.com",
+            "main_service": "Sales-focused CRM",
+            "target_market": "Small Sales Teams",
+            "strengths": [
+              "Visual pipeline management",
+              "Ease of use"
+            ],
+            "weaknesses": [
+              "Lacks the broad multi-departmental ecosystem of Zoho",
+              "Limited AI capabilities compared to Zia"
+            ],
+            "confidence": "high",
+            "source": "ai_suggestion",
+            "website_verified": true
+          },
+          {
+            "name": "Freshsales",
+            "website": "https://www.freshworks.com/crm/sales/",
+            "main_service": "Freshworks CRM",
+            "target_market": "SMBs and Mid-market",
+            "strengths": [
+              "Modern UI",
+              "Built-in phone and email"
+            ],
+            "weaknesses": [
+              "Smaller integration marketplace",
+              "Less mature vertical-specific solutions"
+            ],
+            "confidence": "high",
+            "source": "ai_suggestion",
+            "website_verified": true
+          }
+        ],
+        "comparison": [
+          {
+            "aspect": "Main Service",
+            "your_brand": "AI-powered CRM with Zia Agents",
+            "competitors": {
+              "Salesforce": "Enterprise Cloud CRM"
+            }
+          },
+          {
+            "aspect": "Target Market",
+            "your_brand": "All sizes, specifically growth-oriented businesses",
+            "competitors": {
+              "Pipedrive": "Small Sales Teams"
+            }
+          },
+          {
+            "aspect": "Key Strength",
+            "your_brand": "Privacy-first and 360-degree view",
+            "competitors": {
+              "HubSpot": "Content Marketing Integration"
+            }
+          },
+          {
+            "aspect": "Pricing / Positioning",
+            "your_brand": "Pay-as-you-go, no long-term contracts",
+            "competitors": {
+              "Salesforce": "Annual contracts, premium pricing"
+            }
+          },
+          {
+            "aspect": "Opportunity",
+            "your_brand": "Vertical-specific customization",
+            "competitors": {
+              "Freshsales": "Limited vertical-specific solutions"
+            }
+          }
+        ],
+        "competitive_advantages": [
+          "Zia AI Agents for multi-agent human-AI collaboration",
+          "Canvas Design Studio for instant custom UI layouts",
+          "CRM for Everyone for cross-departmental collaboration",
+          "Transparent, no-contract pricing model"
+        ],
+        "opportunities": [
+          "Targeting Salesforce users looking for lower TCO with 'Zwitch' migration",
+          "Expanding vertical-specific solutions for niche industries like Life Sciences and Real Estate",
+          "Promoting the 'Jumpstart' service to reduce implementation friction"
+        ],
+        "research_note": "Competitors are AI-generated suggestions based on the website's category, services and market. They are not taken from a market-research database. 'website_verified' only confirms the suggested domain exists and responds; please review before making business decisions."
+      },
+      "target_search_queries": [
+        {
+          "query": "best AI CRM for sales growth",
+          "platforms": [
+            "Google"
+          ],
+          "intent": "Service Search",
+          "business_relevance": "Directly targets the core value proposition of Zoho's AI-driven platform.",
+          "target_audience": "Sales Managers and Business Owners"
+        },
+        {
+          "query": "CRM with no long term contracts",
+          "platforms": [
+            "Google",
+            "LinkedIn"
+          ],
+          "intent": "B2B Search",
+          "business_relevance": "Highlights Zoho's flexible pricing model against competitors like Salesforce.",
+          "target_audience": "CFOs and Procurement Officers"
+        },
+        {
+          "query": "how to migrate from spreadsheets to CRM",
+          "platforms": [
+            "Google"
+          ],
+          "intent": "Inspiration",
+          "business_relevance": "Captures businesses at the early stage of digital transformation.",
+          "target_audience": "Small Business Owners"
+        },
+        {
+          "query": "Zoho CRM vs Salesforce for real estate",
+          "platforms": [
+            "Google",
+            "LinkedIn"
+          ],
+          "intent": "Comparison",
+          "business_relevance": "Targets high-intent users looking for vertical-specific solutions.",
+          "target_audience": "Real Estate Agency Directors"
+        },
+        {
+          "query": "AI sales automation tools for teams",
+          "platforms": [
+            "LinkedIn",
+            "X"
+          ],
+          "intent": "B2B Search",
+          "business_relevance": "Aligns with the 'Zia Agents' and 'CRM for Everyone' features.",
+          "target_audience": "Sales Operations Leads"
+        }
+      ],
+      "seo_improvements": {
+        "primary_keyword": "AI CRM Software",
+        "secondary_keywords": [
+          "Sales Force Automation",
+          "Zia AI Agents",
+          "CRM Migration",
+          "Canvas Design Studio",
+          "Customer Engagement Platform"
+        ],
+        "long_tail_keywords": [
+          "AI CRM for small business growth",
+          "CRM with built-in sales automation",
+          "customizable CRM for real estate",
+          "migrate from spreadsheets to Zoho CRM"
+        ],
+        "business_keywords": [
+          "Zia Agents",
+          "CRM for Everyone",
+          "Zwitch",
+          "Jumpstart Service",
+          "Canvas Layout"
+        ],
+        "recommended_title": "Zoho CRM | The Easiest AI CRM Software for Sales Growth",
+        "title_rationale": "The recommended title is 58 characters and emphasizes the primary keyword 'AI CRM Software' while maintaining the brand's 'growth' messaging.",
+        "meta_description": "Zoho CRM is an AI-powered platform helping 350K+ businesses automate sales and close deals. Start your free trial of the top-rated AI CRM software today.",
+        "supporting_content": [
+          {
+            "type": "Industry page",
+            "title": "CRM for Life Sciences & Healthcare",
+            "purpose": "To target the specific regulatory and operational needs of medical and pharmaceutical companies."
+          },
+          {
+            "type": "Service landing page",
+            "title": "Zwitch: Seamless CRM Migration",
+            "purpose": "To provide a dedicated path for users switching from competitors or spreadsheets."
+          },
+          {
+            "type": "FAQ",
+            "title": "AI in CRM: How Zia Agents Work",
+            "purpose": "To explain the technical benefits and use cases of the multi-agent platform."
+          }
+        ],
+        "current_seo_audit": {
+          "current_title": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+          "title_length": 52,
+          "current_meta_description": "Zoho CRM is an agentic CRM platform that helps you manage sales operations and close more deals. Trusted by over 350K businesses worldwide. Sign up for a free trial today.",
+          "meta_description_length": 171,
+          "h1_count": 1,
+          "h1_headings": [
+            "The easiest AI CRM for growth."
+          ],
+          "images_total": 9,
+          "images_missing_alt": 0,
+          "has_canonical": true,
+          "has_structured_data": true,
+          "has_open_graph": true,
+          "has_viewport_meta": true,
+          "has_robots_txt": true,
+          "sitemap_url": "https://www.zoho.com/sitemap-index.xml",
+          "language": "en-in",
+          "word_count": 855,
+          "uses_https": true,
+          "rendered_with_javascript": false,
+          "response_time_ms": 608,
+          "html_size_kb": 28.5,
+          "issues": [
+            "Meta description is long (171 chars) and may be truncated."
+          ]
+        }
+      },
+      "top_services": [
+        {
+          "service_name": "Zoho CRM Platform",
+          "description": "An intelligent automation platform with a 360° view of customer data and Zia AI integration.",
+          "target_industry": "General Business",
+          "target_customer": "Sales Teams",
+          "main_benefit": "Increased productivity and faster deal closing.",
+          "source": "website"
+        },
+        {
+          "service_name": "Zia AI Agents",
+          "description": "A multi-agent platform delivering artificial intelligence to assist with email rewriting, anomaly detection, and macros.",
+          "target_industry": "Technology & Sales",
+          "target_customer": "Sales Operations",
+          "main_benefit": "Smarter task execution and predictive insights.",
+          "source": "website"
+        },
+        {
+          "service_name": "CRM for Everyone",
+          "description": "Collaborative spaces (Teamspaces) that allow non-sales teams to work with CRM data.",
+          "target_industry": "Cross-functional Organizations",
+          "target_customer": "Marketing, Support, and Operations Teams",
+          "main_benefit": "Unified data access across the entire company.",
+          "source": "website"
+        },
+        {
+          "service_name": "Jumpstart Implementation",
+          "description": "A paid, guided onboarding program delivered by certified partners to get businesses running in 2-3 weeks.",
+          "target_industry": "Enterprise & SMB",
+          "target_customer": "New Zoho Users",
+          "main_benefit": "Rapid setup and configuration with expert guidance.",
+          "source": "website"
+        },
+        {
+          "service_name": "Vertical CRM Solutions",
+          "description": "Custom-built CRM instances for specific industries like Automotive, Real Estate, and Insurance.",
+          "target_industry": "Vertical Markets",
+          "target_customer": "Industry-specific Business Owners",
+          "main_benefit": "Pre-configured workflows tailored to industry standards.",
+          "source": "website"
+        }
+      ],
+      "target_audience": {
+        "primary_audience": [
+          "Sales Directors",
+          "Business Owners",
+          "Sales Operations Managers"
+        ],
+        "secondary_audience": [
+          "Marketing Managers",
+          "Customer Support Leads",
+          "IT Administrators"
+        ],
+        "industry_segments": [
+          "Real Estate",
+          "Financial Services",
+          "Life Sciences",
+          "Retail",
+          "Education",
+          "Automotive"
+        ],
+        "business_types": [
+          "Startups",
+          "SMEs",
+          "Global Enterprises",
+          "Agencies"
+        ],
+        "customer_profiles": [
+          "The Growth-Focused Founder: Needs a scalable, low-cost entry CRM that grows with their business.",
+          "The Tech-Savvy Sales Manager: Looking for AI tools (Zia) to automate routine tasks and predict sales trends.",
+          "The Privacy-Conscious Enterprise: Requires strict data compliance and security certificates."
+        ],
+        "geographic_focus": "Global",
+        "customer_needs": [
+          "Eliminating repetitive manual tasks",
+          "Consolidating customer data from multiple channels",
+          "Migrating away from complex or expensive legacy systems",
+          "Ensuring data privacy and security compliance"
+        ],
+        "customer_interests": [
+          "Artificial Intelligence and Automation",
+          "Business Intelligence and Analytics",
+          "Team Collaboration",
+          "App Integrations"
+        ],
+        "recommended_segments": [
+          {
+            "audience": "Real Estate Developers",
+            "business_type": "Mid-sized Agencies",
+            "requirement": "Lead tracking and vendor management under one roof."
+          },
+          {
+            "audience": "Tech Startups",
+            "business_type": "Early-stage Companies",
+            "requirement": "Freemium plan to manage first leads and scale to millions."
+          }
+        ]
+      }
+    },
+    "meta": {
+      "llm_provider": "gemini",
+      "llm_model": "gemini-3-flash-preview",
+      "used_fallback": false,
+      "pages_analyzed": [
+        "https://www.zoho.com/en-in/crm/",
+        "https://www.zoho.com/crm/verticals/?source_from=crm_home",
+        "https://www.zoho.com/en-in/jumpstart/?source_from=crm_home",
+        "https://www.zoho.com/crm/maximum-productivity.html?source_from=crm_home"
+      ],
+      "input_tokens": 7720,
+      "output_tokens": 6257,
+      "estimated_cost_usd": 0.022631,
+      "llm_latency_ms": 26314,
+      "total_duration_ms": 28898,
+      "cached": false,
+      "generated_at": "2026-11-18T17:42:56.555422Z",
+      "notes": [
+        "Search volumes and rankings are intentionally not included - no search-volume data source is connected, so the queries are relevance-based suggestions only."
+      ]
+    }
+  }
+}

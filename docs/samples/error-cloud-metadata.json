@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/link-analysis",
+    "body": {
+      "url": "http://169.254.169.254/latest/meta-data/"
+    }
+  },
+  "status_code": 400,
+  "response_time_seconds": 0.01,
+  "response": {
+    "success": false,
+    "error": {
+      "code": "blocked_url",
+      "message": "URLs pointing to private or internal IP addresses are not allowed."
+    }
+  }
+}

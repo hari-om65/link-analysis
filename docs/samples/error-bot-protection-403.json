@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/link-analysis",
+    "body": {
+      "url": "https://www.tajhotels.com"
+    }
+  },
+  "status_code": 502,
+  "response_time_seconds": 0.23,
+  "response": {
+    "success": false,
+    "error": {
+      "code": "website_access_denied",
+      "message": "The website blocked automated access (HTTP 403)."
+    }
+  }
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "url": "https://basecamp.com",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "run": 1,
+    "ok": false,
+    "seconds": 14.75,
+    "error": "gemini returned HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+  },
+  {
+    "url": "https://basecamp.com",
+    "provider": "gemini",
+    "model": "gemini-3-flash-preview",
+    "run": 1,
+    "ok": true,
+    "seconds": 14.49,
+    "llm_calls": 1,
+    "input_tokens": 3944,
+    "output_tokens": 3072,
+    "cost_usd": 0.011188,
+    "brand": "Basecamp",
+    "competitors": [
+      "Asana",
+      "Monday.com",
+      "Trello"
+    ],
+    "services": [
+      "Project Management",
+      "Client Collaboration",
+      "Company-wide Communication",
+      "AI Agent Integration",
+      "Reliable Hosting Infrastructure"
+    ],
+    "primary_keyword": "Project Management Software"
+  },
+  {
+    "url": "https://basecamp.com",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "run": 1,
+    "ok": true,
+    "seconds": 9.15,
+    "llm_calls": 1,
+    "input_tokens": 3944,
+    "output_tokens": 3076,
+    "cost_usd": 0.0056,
+    "brand": "Basecamp",
+    "competitors": [
+      "Asana",
+      "Trello",
+      "Monday.com"
+    ],
+    "services": [
+      "Project Management",
+      "Team Communication",
+      "Task Management",
+      "File Storage",
+      "Scheduling"
+    ],
+    "primary_keyword": "project management platform"
+  },
+  {
+    "url": "https://basecamp.com",
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "run": 1,
+    "ok": false,
+    "seconds": 80.47,
+    "error": "The model returned JSON but not an object."
+  },
+  {
+    "url": "https://www.zoho.com/crm/",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "run": 1,
+    "ok": false,
+    "seconds": 20.15,
+    "error": "gemini returned HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+  },
+  {
+    "url": "https://www.zoho.com/crm/",
+    "provider": "gemini",
+    "model": "gemini-3-flash-preview",
+    "run": 1,
+    "ok": true,
+    "seconds": 22.73,
+    "llm_calls": 2,
+    "input_tokens": 6238,
+    "output_tokens": 5788,
+    "cost_usd": 0.020483,
+    "brand": "Zoho",
+    "competitors": [
+      "Salesforce",
+      "HubSpot",
+      "Freshworks"
+    ],
+    "services": [
+      "Sales Force Automation",
+      "Zia AI Agents",
+      "Canvas Design Studio",
+      "Predictive AI & BI",
+      "CRM Migration (Zwitch)"
+    ],
+    "primary_keyword": "Zoho CRM"
+  },
+  {
+    "url": "https://www.zoho.com/crm/",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "run": 1,
+    "ok": false,
+    "seconds": 6.17,
+    "error": "gemini returned HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+  },
+  {
+    "url": "https://www.zoho.com/crm/",
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "run": 1,
+    "ok": false,
+    "seconds": 122.22,
+    "error": "gemini request timed out."
+  }
+]

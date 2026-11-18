@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/link-analysis",
+    "body": {
+      "url": "http://localhost"
+    }
+  },
+  "status_code": 400,
+  "response_time_seconds": 0.01,
+  "response": {
+    "success": false,
+    "error": {
+      "code": "blocked_url",
+      "message": "URLs pointing to local or internal hosts are not allowed."
+    }
+  }
+}

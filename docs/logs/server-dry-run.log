@@ -1,0 +1,47 @@
+INFO:     Started server process [26908]
+INFO:     Waiting for application startup.
+2026-11-18 22:36:24,415 | INFO    | app | LLM: gemini/gemini-3.5-flash-lite -> gemini/gemini-3-flash-preview
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:4000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:65422 - "GET /health HTTP/1.1" 200 OK
+2026-11-18 22:36:30,811 | INFO    | httpx | HTTP Request: GET https://basecamp.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:36:31,468 | INFO    | httpx | HTTP Request: GET https://basecamp.com/pricing "HTTP/1.1 200 OK"
+2026-11-18 22:36:31,755 | INFO    | httpx | HTTP Request: GET https://basecamp.com/about "HTTP/1.1 200 OK"
+2026-11-18 22:36:31,971 | INFO    | httpx | HTTP Request: GET https://basecamp.com/projects/product-launch "HTTP/1.1 200 OK"
+2026-11-18 22:36:35,467 | INFO    | app.services.website_extractor | Extracted https://basecamp.com/: 4 page(s), 20159 chars of text
+2026-11-18 22:36:45,511 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-11-18 22:36:48,761 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-11-18 22:37:03,088 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-11-18 22:37:03,090 | WARNING | app.services.analysis_service | LLM gemini/gemini-3.5-flash-lite failed: gemini returned HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-11-18 22:37:17,339 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-11-18 22:37:17,600 | INFO    | httpx | HTTP Request: GET https://asana.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:37:17,715 | INFO    | httpx | HTTP Request: GET https://monday.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:37:17,897 | INFO    | httpx | HTTP Request: GET https://trello.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:37:18,662 | INFO    | httpx | HTTP Request: GET https://clickup.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:37:18,665 | INFO    | app.services.analysis_service | Analysed https://basecamp.com/ with gemini/gemini-3-flash-preview in 48393 ms (tokens in=4486 out=3183, cost=$0.011792)
+INFO:     127.0.0.1:65424 - "POST /link-analysis HTTP/1.1" 200 OK
+2026-11-18 22:37:33,886 | INFO    | app.services.analysis_service | Cache hit for https://basecamp.com/
+INFO:     127.0.0.1:50417 - "POST /link-analysis HTTP/1.1" 200 OK
+2026-11-18 22:37:40,502 | INFO    | httpx | HTTP Request: GET https://www.zoho.com/crm/ "HTTP/1.1 302 Found"
+2026-11-18 22:37:40,713 | INFO    | httpx | HTTP Request: GET https://www.zoho.com/en-in/crm/ "HTTP/1.1 200 OK"
+2026-11-18 22:37:40,824 | INFO    | httpx | HTTP Request: GET https://www.zoho.com/crm/verticals/?source_from=crm_home "HTTP/1.1 200 OK"
+2026-11-18 22:37:41,062 | INFO    | httpx | HTTP Request: GET https://www.zoho.com/crm/maximum-productivity.html?source_from=crm_home "HTTP/1.1 200 OK"
+2026-11-18 22:37:41,253 | INFO    | httpx | HTTP Request: GET https://www.zoho.com/jumpstart/?source_from=crm_home "HTTP/1.1 302 Found"
+2026-11-18 22:37:41,340 | INFO    | httpx | HTTP Request: GET https://www.zoho.com/en-in/jumpstart/?source_from=crm_home "HTTP/1.1 200 OK"
+2026-11-18 22:37:41,357 | INFO    | app.services.website_extractor | Extracted https://www.zoho.com/en-in/crm/: 4 page(s), 12807 chars of text
+2026-11-18 22:37:50,479 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-11-18 22:38:04,953 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-11-18 22:38:13,059 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-11-18 22:38:13,060 | WARNING | app.services.analysis_service | LLM gemini/gemini-3.5-flash-lite failed: gemini returned HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-11-18 22:38:29,056 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-11-18 22:38:29,064 | INFO    | app.services.analysis_service | LLM output failed validation (1 errors), asking for a repair
+2026-11-18 22:38:39,228 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-11-18 22:38:39,629 | INFO    | httpx | HTTP Request: GET https://www.salesforce.com/ "HTTP/1.1 302 Moved Temporarily"
+2026-11-18 22:38:39,669 | INFO    | httpx | HTTP Request: GET https://www.freshworks.com/ "HTTP/1.1 403 Forbidden"
+2026-11-18 22:38:39,741 | INFO    | httpx | HTTP Request: GET https://www.hubspot.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:38:42,165 | INFO    | httpx | HTTP Request: GET https://www.pipedrive.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:38:42,167 | INFO    | app.services.analysis_service | Analysed https://www.zoho.com/crm/ with gemini/gemini-3-flash-preview in 62303 ms (tokens in=7809 out=6385, cost=$0.02306)
+INFO:     127.0.0.1:50419 - "POST /link-analysis HTTP/1.1" 200 OK
+2026-11-18 22:38:42,414 | INFO    | httpx | HTTP Request: GET https://www.tajhotels.com/ "HTTP/1.1 403 Forbidden"
+2026-11-18 22:38:42,416 | WARNING | app | website_access_denied: The website blocked automated access (HTTP 403).
+INFO:     127.0.0.1:50419 - "POST /link-analysis HTTP/1.1" 502 Bad Gateway

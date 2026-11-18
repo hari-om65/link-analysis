@@ -1,0 +1,10 @@
+2026-11-18 23:10:15,687 | INFO    | app | LLM: gemini/gemini-3-flash-preview -> gemini/gemini-3.1-flash-lite
+2026-11-18 23:10:15,687 | INFO    | app | JavaScript rendering: enabled
+2026-11-18 23:10:21,014 | INFO    | app.services.js_renderer | Headless Chromium started for JavaScript rendering
+2026-11-18 23:10:23,294 | INFO    | app.services.website_extractor | Rendered https://sorsiri.in/ with JavaScript: 6579 chars of text
+2026-11-18 23:10:24,957 | INFO    | app.services.website_extractor | Extracted https://sorsiri.in/: 2 page(s), 10179 chars of text (JS rendered)
+2026-11-18 23:10:42,511 | INFO    | app.services.analysis_service | Analysed https://sorsiri.in/ with gemini/gemini-3-flash-preview in 22491 ms (tokens in=3957 out=2989, cost=$0.010946)
+2026-11-18 23:11:50,153 | INFO    | app.services.website_extractor | Extracted https://razorpay.com/: 4 page(s), 33664 chars of text
+2026-11-18 23:12:27,618 | INFO    | app.services.analysis_service | Analysed https://razorpay.com/ with gemini/gemini-3-flash-preview in 39249 ms (tokens in=7982 out=6100, cost=$0.022291)
+2026-11-18 23:12:28,958 | INFO    | app.services.website_extractor | Extracted https://www.zoho.com/en-in/crm/: 4 page(s), 12807 chars of text
+2026-11-18 23:12:56,555 | INFO    | app.services.analysis_service | Analysed https://www.zoho.com/crm/ with gemini/gemini-3-flash-preview in 28898 ms (tokens in=7720 out=6257, cost=$0.022631)

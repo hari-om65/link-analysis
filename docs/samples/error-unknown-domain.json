@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/link-analysis",
+    "body": {
+      "url": "https://this-domain-does-not-exist-4821.com"
+    }
+  },
+  "status_code": 502,
+  "response_time_seconds": 0.17,
+  "response": {
+    "success": false,
+    "error": {
+      "code": "dns_resolution_failed",
+      "message": "Could not resolve the domain 'this-domain-does-not-exist-4821.com'. Check the URL and try again."
+    }
+  }
+}

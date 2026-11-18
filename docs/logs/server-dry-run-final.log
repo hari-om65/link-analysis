@@ -1,0 +1,20 @@
+INFO:     Started server process [23728]
+INFO:     Waiting for application startup.
+2026-11-18 22:47:08,385 | INFO    | app | LLM: gemini/gemini-3-flash-preview -> gemini/gemini-3.1-flash-lite
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:4000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59907 - "GET /health HTTP/1.1" 200 OK
+2026-11-18 22:47:15,723 | INFO    | httpx | HTTP Request: GET https://www.freshworks.com/ "HTTP/1.1 403 Forbidden"
+2026-11-18 22:47:15,725 | WARNING | app | website_access_denied: The website blocked automated access (HTTP 403).
+INFO:     127.0.0.1:59910 - "POST /link-analysis HTTP/1.1" 502 Bad Gateway
+2026-11-18 22:47:29,971 | INFO    | httpx | HTTP Request: GET https://razorpay.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:47:30,739 | INFO    | httpx | HTTP Request: GET https://razorpay.com/pricing/ "HTTP/1.1 200 OK"
+2026-11-18 22:47:30,778 | INFO    | httpx | HTTP Request: GET https://razorpay.com/solutions/e-commerce/ "HTTP/1.1 200 OK"
+2026-11-18 22:47:31,096 | INFO    | httpx | HTTP Request: GET https://razorpay.com/about/ "HTTP/1.1 200 OK"
+2026-11-18 22:47:31,177 | INFO    | app.services.website_extractor | Extracted https://razorpay.com/: 4 page(s), 33672 chars of text
+2026-11-18 22:47:44,668 | INFO    | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-11-18 22:47:45,266 | INFO    | httpx | HTTP Request: GET https://www.payu.in/ "HTTP/1.1 301 Moved Permanently"
+2026-11-18 22:47:45,529 | INFO    | httpx | HTTP Request: GET https://www.cashfree.com/ "HTTP/1.1 200 OK"
+2026-11-18 22:47:45,831 | INFO    | httpx | HTTP Request: GET https://www.stripe.com/ "HTTP/1.1 301 Moved Permanently"
+2026-11-18 22:47:45,832 | INFO    | app.services.analysis_service | Analysed https://razorpay.com/ with gemini/gemini-3-flash-preview in 16195 ms (tokens in=4396 out=3077, cost=$0.011429)
+INFO:     127.0.0.1:59916 - "POST /link-analysis HTTP/1.1" 200 OK
