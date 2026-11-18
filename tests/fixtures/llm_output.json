@@ -1,0 +1,102 @@
+{
+  "brand": {
+    "name": "GreenNest Interiors",
+    "category": "Interior Design",
+    "summary": "Pune-based interior design studio creating sustainable home and office interiors."
+  },
+  "analysis": {
+    "competitor_analysis": {
+      "your_brand": {
+        "name": "GreenNest Interiors",
+        "overview": "Eco-focused interior design studio for apartments and offices in Pune.",
+        "category": "Interior Design",
+        "main_products_services": ["Residential interiors", "Office interiors", "Modular kitchens"],
+        "target_market": "Homeowners and small businesses in Pune",
+        "key_strengths": ["Sustainable materials", "10-year kitchen warranty"]
+      },
+      "competitors": [
+        {
+          "name": "Livspace",
+          "website": "livspace.com",
+          "main_service": "Home interiors",
+          "target_market": "Urban homeowners in India",
+          "strengths": ["Large catalogue", "Strong brand"],
+          "weaknesses": ["Less personalised service"],
+          "confidence": "High"
+        },
+        {
+          "name": "HomeLane",
+          "website": "https://www.homelane.com",
+          "main_service": "Modular interiors",
+          "target_market": "Apartment owners",
+          "strengths": ["Fast delivery"],
+          "weaknesses": ["Limited eco positioning"],
+          "confidence": "medium"
+        },
+        {
+          "name": "GreenNest Interiors",
+          "website": "https://greennest.example",
+          "main_service": "Interiors",
+          "target_market": "Pune",
+          "strengths": [],
+          "weaknesses": [],
+          "confidence": "low"
+        },
+        {
+          "name": "Design Cafe",
+          "website": null,
+          "main_service": "Home interiors",
+          "target_market": "Metro homeowners",
+          "strengths": ["Experience centres"],
+          "weaknesses": ["Premium pricing"],
+          "confidence": "medium"
+        }
+      ],
+      "comparison": [
+        {"aspect": "Main Service", "your_brand": "Sustainable interiors", "competitors": {"Livspace": "Home interiors"}}
+      ],
+      "competitive_advantages": ["Eco-friendly materials", "Local Pune presence"],
+      "opportunities": ["Publish project case studies", "Target startup offices"]
+    },
+    "target_search_queries": [
+      {"query": "interior designers in Pune", "platforms": ["Google"], "intent": "Local Service Search", "business_relevance": "Core service", "target_audience": "Homeowners"},
+      {"query": "eco friendly home interiors", "platforms": ["Instagram", "Facebook"], "intent": "Inspiration", "business_relevance": "Brand differentiator", "target_audience": "Young couples"},
+      {"query": "office interior design for startups", "platforms": ["LinkedIn", "Google"], "intent": "B2B Search", "business_relevance": "Office segment", "target_audience": "Startup founders"},
+      {"query": "modular kitchen price Pune", "platforms": ["Google"], "intent": "Price Comparison", "business_relevance": "Kitchen service", "target_audience": "Homeowners"},
+      {"query": "sustainable interior ideas", "platforms": ["Twitter", "Instagram"], "intent": "Inspiration", "business_relevance": "Awareness", "target_audience": "Design enthusiasts"},
+      {"query": "extra query that should be dropped", "platforms": ["Google"], "intent": "x", "business_relevance": "x", "target_audience": "x"}
+    ],
+    "seo_improvements": {
+      "primary_keyword": "interior designers in Pune",
+      "secondary_keywords": ["home interiors Pune", "office interior design", "modular kitchen Pune"],
+      "long_tail_keywords": ["eco friendly 2BHK interior design Pune"],
+      "business_keywords": ["sustainable interiors"],
+      "recommended_title": "Interior Designers in Pune | Sustainable Homes - GreenNest",
+      "title_rationale": "Adds the primary keyword and location.",
+      "meta_description": "GreenNest Interiors designs sustainable homes, offices and modular kitchens in Pune.",
+      "supporting_content": [
+        {"type": "Location page", "title": "Interior designers in Baner", "purpose": "Local SEO"}
+      ]
+    },
+    "top_services": [
+      {"service_name": "Residential interior design", "description": "Full apartment interiors", "target_industry": "Real estate", "target_customer": "Homeowners", "main_benefit": "Eco-friendly homes", "source": "website"},
+      {"service_name": "Office interiors", "description": "Biophilic workspaces", "target_industry": "Startups", "target_customer": "Founders", "main_benefit": "Productivity", "source": "website"},
+      {"service_name": "Modular kitchens", "description": "Custom kitchens", "target_industry": "Residential", "target_customer": "Homeowners", "main_benefit": "10-year warranty", "source": "website"},
+      {"service_name": "Space planning consultation", "description": "Layout planning", "target_industry": "Residential", "target_customer": "New flat owners", "main_benefit": "Better use of space", "source": "Inferred"},
+      {"service_name": "Furniture sourcing", "description": "Sustainable furniture", "target_industry": "Residential", "target_customer": "Homeowners", "main_benefit": "One-stop shop", "source": "inferred"}
+    ],
+    "target_audience": {
+      "primary_audience": ["Apartment owners in Pune"],
+      "secondary_audience": ["Startup founders"],
+      "industry_segments": ["Residential real estate", "Startups"],
+      "business_types": ["Small offices"],
+      "customer_profiles": ["Young working couple buying first flat"],
+      "geographic_focus": "Pune, Maharashtra",
+      "customer_needs": ["Trustworthy designer", "Transparent pricing"],
+      "customer_interests": ["Sustainability", "Home decor"],
+      "recommended_segments": [
+        {"audience": "First-time home buyers", "business_type": "Residential", "requirement": "Full home interiors"}
+      ]
+    }
+  }
+}
