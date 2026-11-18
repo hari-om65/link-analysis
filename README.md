@@ -4,7 +4,11 @@ Give it a website link and it tells you what that business does, who it competes
 
 It's a FastAPI service with a small web front end. It reads the actual website (homepage plus a few key pages), sends the cleaned-up content to an LLM (Google Gemini by default), checks the answer, and returns one structured JSON report.
 
-> **Before you run it: you need your own Gemini API key.**
+**Live demo:** https://ai-link-analysis-s2em.onrender.com &nbsp;·&nbsp; **API docs:** https://ai-link-analysis-s2em.onrender.com/docs &nbsp;·&nbsp; **Endpoint:** `POST https://ai-link-analysis-s2em.onrender.com/link-analysis`
+
+The demo runs on Render's free plan, which sleeps when idle; if the first page load takes up to a minute, it's just waking up. No API key is needed to try the demo.
+
+> **Before you run it locally: you need your own Gemini API key.**
 > API keys are never committed to this repository, so a fresh clone has none. Getting one is free and takes a minute at https://aistudio.google.com/apikey; put it in a `.env` file as shown in [step 3 of the quick start](#quick-start). Without a key the server still starts and the web page and `/docs` open, but every analysis returns `503 llm_not_configured`.
 
 ![Link Analysis web app](docs/screenshots/ui-competitors.png)
@@ -564,6 +568,8 @@ The repo includes a [render.yaml](render.yaml) blueprint that builds the [Docker
    - Web UI: `https://<your-service>.onrender.com/`
    - API: `https://<your-service>.onrender.com/link-analysis`
    - Docs: `https://<your-service>.onrender.com/docs`
+
+This is how the live demo above is deployed. Checked on the live instance: health, web UI and docs respond; razorpay.com analysed in ~44 s; sorsiri.in (a JavaScript-only site) rendered in the headless browser and analysed in ~34 s; a repeat request served from cache in ~0.6 s; the cloud-metadata address `169.254.169.254` blocked with `400 blocked_url`.
 
 The free plan sleeps after inactivity, so the first request can take ~30–50 s to wake up. It has 512 MB of RAM, so the blueprint limits the browser to one page at a time.
 
