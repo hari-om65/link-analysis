@@ -60,7 +60,7 @@ You need **Python 3.11+** and a **Gemini API key** (free at https://aistudio.goo
 **1. Get the code**
 
 ```bash
-git clone https://github.com/hari-om65/link-analysis..git link-analysis
+git clone https://github.com/hari-om65/link-analysis.git
 cd link-analysis
 ```
 
