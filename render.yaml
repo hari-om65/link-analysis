@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: ai-link-analysis
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: LLM_MODEL
+        value: gemini-3-flash-preview
+      - key: GEMINI_THINKING_LEVEL
+        value: low
+      - key: LLM_FALLBACK_PROVIDER
+        value: gemini
+      - key: LLM_FALLBACK_MODEL
+        value: gemini-3.1-flash-lite
+      - key: LLM_MAX_RETRIES
+        value: "1"
+      - key: LLM_MAX_OUTPUT_TOKENS
+        value: "12000"
+      # the free instance has 512 MB RAM - one browser page at a time is plenty
+      - key: JS_RENDER_MAX_CONCURRENT
+        value: "1"
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "10"
+      - key: GEMINI_API_KEY
+        sync: false
