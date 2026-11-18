@@ -4,6 +4,9 @@ Give it a website link and it tells you what that business does, who it competes
 
 It's a FastAPI service with a small web front end. It reads the actual website (homepage plus a few key pages), sends the cleaned-up content to an LLM (Google Gemini by default), checks the answer, and returns one structured JSON report.
 
+> **Before you run it: you need your own Gemini API key.**
+> API keys are never committed to this repository, so a fresh clone has none. Getting one is free and takes a minute at https://aistudio.google.com/apikey; put it in a `.env` file as shown in [step 3 of the quick start](#quick-start). Without a key the server still starts and the web page and `/docs` open, but every analysis returns `503 llm_not_configured`.
+
 ![Link Analysis web app](docs/screenshots/ui-competitors.png)
 
 ---
@@ -82,19 +85,28 @@ python -m playwright install chromium
 
 The last line downloads a headless Chromium (~120 MB). It's only used for JavaScript-heavy websites, so you can skip it; everything else still works.
 
-**3. Add your API key**
+**3. Add your API key (required)**
 
-```bash
-cp .env.example .env        # Windows: copy .env.example .env
-```
+The repository doesn't contain a key, so this step is needed on every new machine.
 
-Open `.env` and paste your key:
+1. Create a free key at https://aistudio.google.com/apikey (sign in with Google → **Create API key** → copy it).
+2. Make your own `.env` file from the template:
 
-```env
-GEMINI_API_KEY=your-key-here
-```
+   ```bash
+   cp .env.example .env        # Windows: copy .env.example .env
+   ```
 
-The other values in `.env.example` are sensible defaults. See [Configuration](#configuration) if you want to change them.
+3. Open `.env` in any editor and paste the key after `GEMINI_API_KEY=`, with no quotes or spaces:
+
+   ```env
+   GEMINI_API_KEY=AIza...your-key...
+   ```
+
+4. Save the file. If the server is already running, restart it so it picks up the key.
+
+`.env` is listed in `.gitignore`, so your key stays on your machine and is never pushed. The other values in `.env.example` are sensible defaults; see [Configuration](#configuration) if you want to change them.
+
+Check it worked: when the server starts there should be **no** line saying `No API key found`. If there is, the key wasn't picked up.
 
 **4. Start the server**
 
